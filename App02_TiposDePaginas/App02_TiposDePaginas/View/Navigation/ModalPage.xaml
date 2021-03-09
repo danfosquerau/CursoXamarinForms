@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App02_TiposDePaginas.View.Navigation.ModalPage"
+             BackgroundColor="{StaticResource ColorAccent}">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout Orientation="Horizontal"
+                         VerticalOptions="Start"
+                         HorizontalOptions="FillAndExpand"
+                         BackgroundColor="{StaticResource ColorPrimary}">
+                <Label Text="I am the Title" TextColor="White" 
+                       HorizontalTextAlignment="Center"
+                       VerticalTextAlignment="Center" HorizontalOptions="FillAndExpand" />
+                <Button Text="X" 
+                        Clicked="Button_Clicked" 
+                        TextColor="Gray"
+                        BackgroundColor="{StaticResource ColorAccent}"
+                        HorizontalOptions="End"/>
+            </StackLayout>
+            <Label Text="I am a Modal!"
+                   VerticalOptions="CenterAndExpand" 
+                   HorizontalOptions="CenterAndExpand" 
+                   TextColor="Black"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

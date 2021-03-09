@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App02_TiposDePaginas.View.Navigation.Page1"
+             Title="Title of Navigation">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Search" />
+        <ToolbarItem Text="Details" />
+        <ToolbarItem Text="Order" />
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <StackLayout  VerticalOptions="CenterAndExpand">
+            <Label Text="I am Content Page!"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand"
+                TextColor="Black"/>
+            <Button Text="Go to Page 2!"
+                    Clicked="Button_Clicked"
+                    TextColor="White"
+                    BackgroundColor="{StaticResource ColorPrimary}"
+                    HorizontalOptions="Center"/>
+            <Button Text="Push Modal Page"
+                    Clicked="Button_Clicked_1"
+                    TextColor="White"
+                    BackgroundColor="{StaticResource ColorPrimary}"
+                    HorizontalOptions="Center"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

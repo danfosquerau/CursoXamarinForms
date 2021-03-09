@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            x:Class="App02_TiposDePaginas.View.Tabbed.TabbedPage"
+            xmlns:tab="clr-namespace:App02_TiposDePaginas.View.Navigation"
+            Title="Tabbed Page">
+    <tab:Page1 Title="Item 1" IconImageSource="{OnPlatform Default=item_1.png, UWP=Resources/item_1.png}"/>
+    <tab:Page2 Title="Item 2" IconImageSource="{OnPlatform Default=item_2.png, UWP=Resources/item_2.png}"/>
+</TabbedPage>
