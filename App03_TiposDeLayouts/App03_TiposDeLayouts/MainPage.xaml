@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App03_TiposDeLayouts.MainPage"
+             Title="Main Page">
+    <StackLayout>
+        <Button x:Name="btnStack" Text="Stack Layout" Clicked="btnStack_Clicked"/>
+        <Button x:Name="btnGrid" Text="Grid" Clicked="btnGrid_Clicked"/>
+        <Button x:Name="btnAbsolute" Text="Absolute Layout" Clicked="btnAbsolute_Clicked"/>
+        <Button x:Name="btnRelative" Text="Relative Layout" Clicked="btnRelative_Clicked"/>
+        <Button x:Name="btnScroll" Text="Scroll View" Clicked="btnScroll_Clicked"/>
+    </StackLayout>
+</ContentPage>
