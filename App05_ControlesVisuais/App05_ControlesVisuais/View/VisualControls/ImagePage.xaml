@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App05_ControlesVisuais.View.VisualControls.ImagePage">
+    <ContentPage.Content>
+        <StackLayout x:Name="container">
+            <Image Source="http://3.bp.blogspot.com/_2-G6qA24tGo/SuXqJfRmVbI/AAAAAAAAALY/xnjeWF6GWBk/w1200-h630-p-k-no-nu/carrefour-logo-logotipo-logomarca.png" 
+                   Aspect="Fill"
+                   IsOpaque="True"
+                   x:Name="img1"
+                   VerticalOptions="FillAndExpand"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

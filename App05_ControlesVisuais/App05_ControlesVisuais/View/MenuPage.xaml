@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+                  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                  xmlns:page="clr-namespace:App05_ControlesVisuais.View"
+                  x:Class="App05_ControlesVisuais.View.MenuPage">
+    <MasterDetailPage.Master>
+        <ContentPage Title="Menu">
+            <ScrollView>
+                <StackLayout>
+                    <Button x:Name="btnActivityIndicator" 
+                            Text="ActivityIndicator" 
+                            Clicked="btnActivityIndicator_Clicked"/>
+                    <Button x:Name="btnProgressBar" 
+                            Text="ProgressBar" 
+                            Clicked="btnProgressBar_Clicked"/>
+                    <Button x:Name="btnBoxView" 
+                            Text="BoxView" 
+                            Clicked="btnBoxView_Clicked"/>
+                    <Button x:Name="btnLabel" 
+                            Text="Label" 
+                            Clicked="btnLabel_Clicked"/>
+                    <Button x:Name="btnButton" 
+                            Text="Button" 
+                            Clicked="btnButton_Clicked"/>
+                    <Button x:Name="btnEntryEditor" 
+                            Text="Entry and Editor" 
+                            Clicked="btnEntryEditor_Clicked"/>
+                    <Button x:Name="btnDatePicker" 
+                            Text="DatePicker" 
+                            Clicked="btnDatePicker_Clicked"/>
+                    <Button x:Name="btnTimePicker" 
+                            Text="TimePicker" 
+                            Clicked="btnTimePicker_Clicked"/>
+                    <Button x:Name="btnPicker" 
+                            Text="Picker" 
+                            Clicked="btnPicker_Clicked"/>
+                    <Button x:Name="btnSearchBar" 
+                            Text="SearchBar" 
+                            Clicked="btnSearchBar_Clicked"/>
+                    <Button x:Name="btnSliderStepper" 
+                            Text="Slider and Stepper" 
+                            Clicked="btnSliderStepper_Clicked"/>
+                    <Button x:Name="btnSwitch" 
+                            Text="Switch" 
+                            Clicked="btnSwitch_Clicked"/>
+                    <Button x:Name="btnImage" 
+                            Text="Image" 
+                            Clicked="btnImage_Clicked"/>
+                    <Button x:Name="btnListView" 
+                            Text="ListView" 
+                            Clicked="btnListView_Clicked"/>
+                    <Button x:Name="btnTableView" 
+                            Text="TableView" 
+                            Clicked="btnTableView_Clicked"/>
+                    <Button x:Name="btnWebView" 
+                            Text="WebView" 
+                            Clicked="btnWebView_Clicked"/>
+                </StackLayout>
+            </ScrollView>
+        </ContentPage>
+    </MasterDetailPage.Master>
+    <MasterDetailPage.Detail>
+        <NavigationPage>
+            <x:Arguments>
+                <page:HomePage />
+            </x:Arguments>
+        </NavigationPage>
+    </MasterDetailPage.Detail>
+</MasterDetailPage>
