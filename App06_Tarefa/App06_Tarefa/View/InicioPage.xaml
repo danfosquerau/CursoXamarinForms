@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App06_Tarefa.View.InicioPage"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout >
+            <StackLayout BackgroundColor="DarkBlue" HeightRequest="250">
+                <Label Text="Meu Dia" FontSize="24" TextColor="White" 
+                       VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
+                <Label x:Name="lblData" HorizontalOptions="Start" VerticalOptions="End" TextColor="White"/>
+            </StackLayout>
+            <ScrollView>
+                <StackLayout x:Name="slTarefa" Padding="10" Spacing="10">
+                    <!--<StackLayout Orientation="Horizontal" Spacing="15">
+                    <Image VerticalOptions="Center" Source="CheckOff.png" />
+                    <Label VerticalOptions="Center" HorizontalOptions="FillAndExpand" Text="Task 1" />
+                    <Image VerticalOptions="Center" Source="4.png"/>
+                    <Image VerticalOptions="Center" Source="Delete.png"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" Spacing="15">
+                    <Image VerticalOptions="Center" Source="CheckOn.png"/>
+                    <StackLayout HorizontalOptions="FillAndExpand"  Spacing="0" VerticalOptions="Center">
+                        <Label Text="Task 1"  TextColor="Gray"/>
+                        <Label Text="Finalizado em 20/01/2018 - 17:00h" TextColor="Gray" FontSize="10"/>
+                    </StackLayout>
+                    <Image VerticalOptions="Center" Source="2.png"/>
+                    <Image VerticalOptions="Center" Source="Delete.png"/>
+                </StackLayout>-->
+                </StackLayout>
+            </ScrollView>
+            <Button x:Name="btnAdd"
+                    BackgroundColor="Transparent" 
+                    HorizontalOptions="Center" 
+                    Clicked="btnAdd_Clicked">
+                <Button.ImageSource>
+                    <OnPlatform x:TypeArguments="ImageSource">
+                        <On Platform="Android, iOS" Value="AddBotao.png"/>
+                        <On Platform="UWP" Value="Resources/AddBotao.png"/>
+                    </OnPlatform>
+                </Button.ImageSource>
+            </Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
